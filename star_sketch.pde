@@ -2,7 +2,7 @@
 XML xml;
 void setup() {
   background(0, 60, 60);
-  
+  size(640, 360);
   textSize(32);
   
   text("wow", 10, 35*(i+1)); 
@@ -23,8 +23,6 @@ void setup() {
 
   }
 
-
-  size(640, 360);
 }
 
 void draw() {
