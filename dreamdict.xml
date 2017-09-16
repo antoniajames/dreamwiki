@@ -1,19 +1,5 @@
-// Declare some global variables
-XML response;
-String sunrise, sunset;
-
-void setup() {
-  // Load the XML file
-  response = loadXML("response.xml");
-  
-  // Parse down to what you want
-  XML parsed = response.getChild("channel/yweather:astronomy");
-
-  // Put the sunrise and sunset times in strings
-  sunrise = parsed.getString("sunrise");
-  sunset = parsed.getString("sunset");
-  
-  // Print the results
-  println(sunrise);
-  println(sunset);
-}
+<mammals>
+   <animal id="0" species="Capra hircus">Goat</animal>
+   <animal id="1" species="Panthera pardus">Leopard</animal>
+   <animal id="2" species="Equus zebra">Zebra</animal>
+</mammals>
