@@ -8,10 +8,6 @@ void setup() {
   XML[] children = xml.getChildren("animal");
   
   
-  PImage img;
-  img = loadImage("8ball.png");
-  imageMode(CORNER);
-  image(img, 10, 10, 200, 200);
 
   textSize(32);
   
