@@ -1,9 +1,8 @@
 
-
+XML xml;
 void setup() {
   background(0, 60, 60);
   
-  XML xml;
   xml = loadXML("dreamdict.xml");
   XML[] children = xml.getChildren("animal");
   
