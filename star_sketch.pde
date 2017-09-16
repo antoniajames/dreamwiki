@@ -3,19 +3,23 @@ XML xml;
 void setup() {
   background(0, 60, 60);
   
+  textSize(32);
+  
+  text("wow", 10, 35*(i+1)); 
+  
   xml = loadXML("dream_dict.xml");
   XML[] children = xml.getChildren("animal");
   
   
 
-  textSize(32);
+  
   
   for (int i = 0; i < children.length; i++) {
     int id = children[i].getInt("id");
     String coloring = children[i].getString("species");
     String name = children[i].getContent();
 
-    text(name, 10, 35*(i+1)); 
+    text("wow", 10, 35*(i+1)); 
 
   }
 
