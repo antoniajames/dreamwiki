@@ -3,7 +3,7 @@ XML xml;
 void setup() {
   background(0, 60, 60);
   
-  xml = loadXML("dreamdict.xml");
+  xml = loadXML("dream_dict.xml");
   XML[] children = xml.getChildren("animal");
   
   
