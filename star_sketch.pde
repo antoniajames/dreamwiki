@@ -19,7 +19,7 @@ void setup() {
     String coloring = children[i].getString("species");
     String name = children[i].getContent();
 
-    text("wow", 10, 35*(i+1)); 
+    text(name, 10, 35*(i+1)); 
 
   }
 
