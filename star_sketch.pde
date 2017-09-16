@@ -1,3 +1,5 @@
+
+
 void setup() {
   background(0, 60, 60);
   
@@ -21,12 +23,12 @@ void setup() {
     text(name, 10, 35*(i+1)); 
 
   }
+
+
   size(640, 360);
 }
 
-
 void draw() {
-  background(102);
  
   pushMatrix();
   translate(width*0.8, height*0.5);
