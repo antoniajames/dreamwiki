@@ -21,6 +21,9 @@ void setup() {
     text(name, 10, 35*(i+1)); 
 
   }
+  size(640, 360);
+}
+
 
 void draw() {
   background(102);
