@@ -1,6 +1,26 @@
 void setup() {
-  size(640, 360);
-}
+  background(0, 60, 60);
+  
+  XML xml;
+  xml = loadXML("dream_dict.xml");
+  XML[] children = xml.getChildren("animal");
+  
+  
+  PImage img;
+  img = loadImage("8ball.png");
+  imageMode(CORNER);
+  image(img, 10, 10, 200, 200);
+
+  textSize(32);
+  
+  for (int i = 0; i < children.length; i++) {
+    int id = children[i].getInt("id");
+    String coloring = children[i].getString("species");
+    String name = children[i].getContent();
+
+    text(name, 10, 35*(i+1)); 
+
+  }
 
 void draw() {
   background(102);
