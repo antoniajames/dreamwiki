@@ -7,7 +7,7 @@ void setup() {
   
   text("wow", 10, 35*(i+1)); 
   
-  xml = loadXML("dream_dict.xml");
+  xml = loadXML("test_dict.xml");
   XML[] children = xml.getChildren("animal");
   
   
