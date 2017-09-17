@@ -21,12 +21,14 @@ void setup() {
 
     text(name, 10, 35*(i+1)); 
     
+  }
+    
   XML newChild = xml.addChild("animal");
   newChild.setContent("test");
   newChild.setString("species", "TEST PASSED");
   saveXML(xml, "dream_dict.xml");
 
-  }
+  
 
 }
 
