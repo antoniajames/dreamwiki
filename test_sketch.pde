@@ -26,7 +26,7 @@ void setup() {
   XML newChild = xml.addChild("animal");
   newChild.setContent("test");
   newChild.setString("species", "TEST PASSED");
-  saveXML(xml, "dream_dict.xml");
+  saveXML(xml, "test_dict.xml");
 
   
 
