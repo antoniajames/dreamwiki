@@ -46,7 +46,7 @@ void setup() {
 
   
   symbol_dict = new StringDict();
-  
+  text("dict passed 1", 40, 30);
   for (int i = 0; i < children.length; i++) {
      // get the current term:
      String cur_term = children[i].getContent(); 
@@ -56,17 +56,17 @@ void setup() {
      symbol_dict.set(cur_term, cur_def);
   }
   
-
+  text("dict passed 2", 50, 30);
   //testing XML //
   for (int i = 0; i < children.length; i++) {
     String coloring = children[i].getString("def"); //gets dream definintion
     String word = children[i].getContent(); //gets the word
     
-    println(coloring + ", " + word);
-    text(word, 10, 30+(i*30)); 
+    
+    text(word, 90, 30+(i*30)); 
     
   }
-  
+  text("dict load passed", 60, 30);
   
   
 }
