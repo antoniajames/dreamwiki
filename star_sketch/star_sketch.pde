@@ -18,7 +18,7 @@
  
  
 MultilineTextBox textBox;
-StringDict symbol_dict; //later, make this global
+var symbol_dict; //later, make this global
 XML xml; // make this global
 void setup() {
   size(640, 360);
@@ -46,7 +46,7 @@ void setup() {
   
 
   
-  symbol_dict = new StringDict();
+  symbol_dict = [];
   text("dict passed 1", 40, 30);
   for (int i = 0; i < children.length; i++) {
      // get the current term:
