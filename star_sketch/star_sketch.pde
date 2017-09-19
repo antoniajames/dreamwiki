@@ -21,8 +21,9 @@ MultilineTextBox textBox;
 StringDict symbol_dict; //later, make this global
 XML xml; // make this global
 void setup() {
-  text("background", 30, 30*3);
+  
   background(0, 60, 60);
+  text("background", 30, 30*3);
   text("size", 30, 30);
   size(640, 360);
   text("textbox", 30, 30*2);
