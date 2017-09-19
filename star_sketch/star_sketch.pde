@@ -39,6 +39,7 @@ void setup() {
   xml = loadXML("dream_dict.xml");
   XML[] children = xml.getChildren("word");
   text("xml passed", 30, 30);
+  text(children[1].getContent(), 40, 50);
   
   // HERE, we make an empty dictionary for storing terms. This is for
   // easy, fast search through terms compared to a search thru XML file:
