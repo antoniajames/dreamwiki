@@ -40,6 +40,7 @@ void setup() {
   //INITIAL LOAD OF XML:
   
   xml = loadXML("dream_dict.xml");
+  text("XML", 30, 30*3);
   XML[] children = xml.getChildren("word");
   
   // HERE, we make an empty dictionary for storing terms. This is for
@@ -58,7 +59,7 @@ void setup() {
      symbol_dict.set(cur_term, cur_def);
   }
   
-
+  text("tesing XML", 30, 30*4);
   //testing XML //
   for (int i = 0; i < children.length; i++) {
     String coloring = children[i].getString("def"); //gets dream definintion
@@ -68,7 +69,7 @@ void setup() {
     //text(word, 10, 30+(i*30)); 
     
   }
-  
+  text("end setup", 30, 30*5);
   
   
 }
@@ -80,6 +81,7 @@ void draw() {
   //rotate(frameCount / -100.0);
   //star(0, 0, 30, 70, 5); 
   //popMatrix();
+  text("draw", 30, 30*6);
   
   textBox.update();
   textBox.display();
