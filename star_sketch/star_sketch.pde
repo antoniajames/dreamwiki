@@ -62,8 +62,8 @@ void setup() {
     String coloring = children[i].getString("def"); //gets dream definintion
     String word = children[i].getContent(); //gets the word
     
-    //println(coloring + ", " + word);
-    //text(word, 10, 30+(i*30)); 
+    println(coloring + ", " + word);
+    text(word, 10, 30+(i*30)); 
     
   }
   
