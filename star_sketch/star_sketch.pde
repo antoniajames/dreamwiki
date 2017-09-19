@@ -21,10 +21,11 @@ MultilineTextBox textBox;
 StringDict symbol_dict; //later, make this global
 XML xml; // make this global
 void setup() {
-
+  text("size", 30, 30);
   size(640, 360);
-  
+  text("textbox", 30, 30*2);
   textBox = new MultilineTextBox("Type dream symbol here", 50, 50, 500, 500);
+  text("background", 30, 30*3);
   background(0, 60, 60);
   textSize(32);
 
