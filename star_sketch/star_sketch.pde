@@ -18,7 +18,7 @@
  
 MultilineTextBox textBox;
 HashMap symbol_dict; 
-XMLElement xml; // make this global
+XML xml; // make this global
 void setup() {
   size(640, 360);
   background(250, 240, 230);
@@ -35,7 +35,7 @@ void setup() {
   
   //INITIAL LOAD OF XML:
   
-  xml = new XMLElement(this, "dream_dict.xml");
+  xml = new loadXML("dream_dict.xml");
   XML[] children = xml.getChildren("word");
   
   // HERE, we make an empty dictionary for storing terms. This is for
