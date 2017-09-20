@@ -24,7 +24,7 @@ void setup() {
   background(250, 240, 230);
   text("testing textbox...", 30, 30);
   textBox = new MultilineTextBox("Type dream symbol here", 50, 50, 500, 500);
-  text("passed.... testing XML", 30, 60);
+  text("passed.... testing load XML", 30, 60);
   textSize(32);
 
   // TEST IMAGE LOADING
@@ -43,7 +43,7 @@ void setup() {
   
   //TESTING:
 
-  
+  text("passed.... testing new Hasmap...", 30, 70);
   symbol_dict = new HashMap();
   
   for (int i = 0; i < children.length; i++) {
@@ -55,7 +55,7 @@ void setup() {
      symbol_dict.put(cur_term, cur_def);
   }
   
-
+  text("passed.... testing XML loading...", 30, 80);
   //testing XML //
   for (int i = 0; i < children.length; i++) {
     String coloring = children[i].getString("def"); //gets dream definintion
