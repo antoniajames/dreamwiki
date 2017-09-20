@@ -22,9 +22,9 @@ XML xml; // make this global
 void setup() {
   size(640, 360);
   background(250, 240, 230);
-  
+  text("testing textbox...", 30, 30);
   textBox = new MultilineTextBox("Type dream symbol here", 50, 50, 500, 500);
-  
+  text("passed.... testing XML", 30, 60);
   textSize(32);
 
   // TEST IMAGE LOADING
@@ -67,7 +67,7 @@ void setup() {
   }
   
   
-  size(640, 360);
+  
 }
 
 void draw() {
