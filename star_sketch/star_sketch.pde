@@ -14,16 +14,17 @@
  * becoming too long (TODO), selection, and copy + paste.
  */
  
-//import java.awt.event.KeyEvent;
  
  
 MultilineTextBox textBox;
 HashMap symbol_dict; 
 XML xml; // make this global
 void setup() {
+  size(640, 360);
+  background(250, 240, 230);
   
   textBox = new MultilineTextBox("Type dream symbol here", 50, 50, 500, 500);
-  background(250, 240, 230);
+  
   textSize(32);
 
   // TEST IMAGE LOADING
