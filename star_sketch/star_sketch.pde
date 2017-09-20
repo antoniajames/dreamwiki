@@ -45,27 +45,26 @@ void setup() {
   
   text("passed.... testing new Hasmap...", 30, 70);
   symbol_dict = new HashMap<String,String>();
-  text("passed.... testing XML getcontent...", 30, 80);
+  text("passed.... testing XML getcontent and Hash.put...", 30, 80);
   for (int i = 0; i < children.length; i++) {
      // get the current term:
      String cur_term = children[i].getContent(); 
-     text("passed.... testing XML getstring...", 30, 90);
+     text("cur_term" + cur_term, 30, 90+i*10);
      // get its definition:
      String cur_def = children[i].getString("def");
-     text("passed.... testing hashmap.put...", 30, 100);
      // save the term and definition into dictionary:
      symbol_dict.put(cur_term, cur_def);
-     text("passed.", 30, 110);
+     text("HashMap(cur_term)" + symbol_dict.get(cur_term), 80, 90+i*10);
   }
-  
-  text("passed.... testing XML loading...", 30, 80);
+  text("passed.", 30, 110);
+  text("passed.... testing XML loading...", 30, 120);
   //testing XML //
   for (int i = 0; i < children.length; i++) {
     String coloring = children[i].getString("def"); //gets dream definintion
     String word = children[i].getContent(); //gets the word
     
     println(coloring + ", " + word);
-    text(word, 10, 30+(i*30)); 
+    text(word, 10, 70+(i*30)); 
     
   }
   
