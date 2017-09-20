@@ -18,14 +18,12 @@
  
  
 MultilineTextBox textBox;
-var symbol_dict; //later, make this global
+HashMap symbol_dict; 
 XML xml; // make this global
 void setup() {
-  size(640, 360);
-  background(0, 60, 60);
+  
   textBox = new MultilineTextBox("Type dream symbol here", 50, 50, 500, 500);
-  
-  
+  background(250, 240, 230);
   textSize(32);
 
   // TEST IMAGE LOADING
@@ -38,38 +36,37 @@ void setup() {
   
   xml = loadXML("dream_dict.xml");
   XML[] children = xml.getChildren("word");
-  text("xml passed", 30, 30);
-  text(children[1].getContent(), 40, 50);
   
   // HERE, we make an empty dictionary for storing terms. This is for
   // easy, fast search through terms compared to a search thru XML file:
   
+  //TESTING:
 
   
-  symbol_dict = [];
-  text("dict passed 1", 40, 30);
+  symbol_dict = new HashMap();
+  
   for (int i = 0; i < children.length; i++) {
      // get the current term:
      String cur_term = children[i].getContent(); 
      // get its definition:
      String cur_def = children[i].getString("def");
      // save the term and definition into dictionary:
-     symbol_dict.set(cur_term, cur_def);
+     symbol_dict.put(cur_term, cur_def);
   }
   
-  text("dict passed 2", 50, 30);
+
   //testing XML //
   for (int i = 0; i < children.length; i++) {
     String coloring = children[i].getString("def"); //gets dream definintion
     String word = children[i].getContent(); //gets the word
     
-    
-    text(word, 90, 30+(i*30)); 
+    println(coloring + ", " + word);
+    text(word, 10, 30+(i*30)); 
     
   }
-  text("dict load passed", 60, 30);
   
   
+  size(640, 360);
 }
 
 void draw() {
@@ -390,11 +387,13 @@ class MultilineTextBox {
   void search_term() {
 
      String term = join(text, "");
-     if (symbol_dict.hasKey(term.toLowerCase()))
+     if (symbol_dict.containsKey(term.toLowerCase()))
      {
-       println("YES " + term);
+       textSize(12);
        text = new String[1];
-       text[0] = "";
+       text[0] = (term + ": \n" + symbol_dict.get(term.toLowerCase()));
+
+
        ypos = 0;
        xpos = 0;
      } 
