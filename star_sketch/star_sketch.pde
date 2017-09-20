@@ -17,7 +17,7 @@
  
  
 MultilineTextBox textBox;
-HashMap symbol_dict; 
+HashMap<String,String> symbol_dict; 
 XML xml; // make this global
 void setup() {
   size(640, 360);
@@ -25,7 +25,7 @@ void setup() {
   text("testing textbox...", 30, 30);
   textBox = new MultilineTextBox("Type dream symbol here", 50, 50, 500, 500);
   text("passed.... testing load XML", 30, 60);
-  textSize(32);
+  
 
   // TEST IMAGE LOADING
   //PImage img;
@@ -42,17 +42,20 @@ void setup() {
   // easy, fast search through terms compared to a search thru XML file:
   
   //TESTING:
-
-  text("passed.... testing new Hasmap...", 30, 70);
-  symbol_dict = new HashMap();
   
+  text("passed.... testing new Hasmap...", 30, 70);
+  symbol_dict = new HashMap<String,String>();
+  text("passed.... testing XML getcontent...", 30, 80);
   for (int i = 0; i < children.length; i++) {
      // get the current term:
      String cur_term = children[i].getContent(); 
+     text("passed.... testing XML getstring...", 30, 90);
      // get its definition:
      String cur_def = children[i].getString("def");
+     text("passed.... testing hashmap.put...", 30, 100);
      // save the term and definition into dictionary:
      symbol_dict.put(cur_term, cur_def);
+     text("passed.", 30, 110);
   }
   
   text("passed.... testing XML loading...", 30, 80);
