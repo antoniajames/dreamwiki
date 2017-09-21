@@ -29,11 +29,7 @@ void setup() {
   text("passed.... testing load XML", 30, 60);
   
 
-  
-  PImage img;
-  img = loadImage("https://preview.ibb.co/bYNWr5/Orion_Clear_night_sky.jpg");
-  
-  background(img);
+
 
   
   //INITIAL LOAD OF XML:
