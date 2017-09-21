@@ -14,15 +14,17 @@
  * becoming too long (TODO), selection, and copy + paste.
  */
 
-var dream;
-function formdata() 
-{
-  dream = document.getElementById("dream").value;
-  document.writeln("<h1>Confirmation Page</h1><br>");
-  document.writeln("Thank you for completing this form.<br><br>");
-  document.writeln("The first name you entered is " + dream + "<br>");
-}
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
 
+<script>
+function myFunction() {
+    document.getElementById("frm1").submit();
+}
+</script>
 
  
  
