@@ -23,17 +23,18 @@ HashMap<String,String> symbol_dict;
 XML xml; // make this global
 void setup() {
   size(640, 360);
-  background(250, 240, 230);
+  background(0, 0, 0);
   text(dream, 30, 30);
   //textBox = new MultilineTextBox("Type dream symbol here", 50, 50, 500, 500);
   text("passed.... testing load XML", 30, 60);
   
 
-  // TEST IMAGE LOADING
-  //PImage img;
-  //img = loadImage("8ball.png");
-  //imageMode(CORNER);
-  //image(img, 10, 10, 200, 200);
+  
+  PImage img;
+  img = loadImage("https://preview.ibb.co/bYNWr5/Orion_Clear_night_sky.jpg");
+  
+  background(img);
+
   
   //INITIAL LOAD OF XML:
   
