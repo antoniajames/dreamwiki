@@ -16,14 +16,14 @@
  
  
  
-MultilineTextBox textBox;
+//MultilineTextBox textBox;
 HashMap<String,String> symbol_dict; 
 XML xml; // make this global
 void setup() {
   size(640, 360);
   background(250, 240, 230);
   text("testing textbox...", 30, 30);
-  textBox = new MultilineTextBox("Type dream symbol here", 50, 50, 500, 500);
+  //textBox = new MultilineTextBox("Type dream symbol here", 50, 50, 500, 500);
   text("passed.... testing load XML", 30, 60);
   
 
@@ -80,8 +80,8 @@ void draw() {
   //star(0, 0, 30, 70, 5); 
   //popMatrix();
   
-  textBox.update();
-  textBox.display();
+  //textBox.update();
+  //textBox.display();
 }
 
 
