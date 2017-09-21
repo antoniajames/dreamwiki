@@ -14,12 +14,13 @@
  * becoming too long (TODO), selection, and copy + paste.
  */
 
+var dream;
 function formdata() 
 {
-var dream = document.getElementById("dream").value;
-document.writeln("<h1>Confirmation Page</h1><br>");
-document.writeln("Thank you for completing this form.<br><br>");
-document.writeln("The first name you entered is " + dream + "<br>");
+  dream = document.getElementById("dream").value;
+  document.writeln("<h1>Confirmation Page</h1><br>");
+  document.writeln("Thank you for completing this form.<br><br>");
+  document.writeln("The first name you entered is " + dream + "<br>");
 }
 
 
@@ -31,7 +32,7 @@ XML xml; // make this global
 void setup() {
   size(640, 360);
   background(250, 240, 230);
-  text("testing textbox...", 30, 30);
+  text(dream, 30, 30);
   //textBox = new MultilineTextBox("Type dream symbol here", 50, 50, 500, 500);
   text("passed.... testing load XML", 30, 60);
   
