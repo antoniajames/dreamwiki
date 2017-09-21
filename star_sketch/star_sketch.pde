@@ -13,7 +13,16 @@
  * Text box supports basic text input, multiple lines, lines returning when
  * becoming too long (TODO), selection, and copy + paste.
  */
- 
+
+function formdata() 
+{
+var dream = document.getElementById("dream").value;
+document.writeln("<h1>Confirmation Page</h1><br>");
+document.writeln("Thank you for completing this form.<br><br>");
+document.writeln("The first name you entered is " + dream + "<br>");
+}
+
+
  
  
 //MultilineTextBox textBox;
