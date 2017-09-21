@@ -35,7 +35,7 @@ void setup() {
   
   //INITIAL LOAD OF XML:
   
-  xml = new loadXML("dream_dict.xml");
+  xml = loadXML("dream_dict.xml");
   XML[] children = xml.getChildren("word");
   
   // HERE, we make an empty dictionary for storing terms. This is for
