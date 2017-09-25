@@ -26,7 +26,7 @@ void setup() {
   background(0, 0, 0);
   text(dream, 30, 30);
   //textBox = new MultilineTextBox("Type dream symbol here", 50, 50, 500, 500);
-  text(firstName, 30, 10);
+  //text(firstName, 30, 10);
   text("passed.... testing load XML", 30, 60);
   
 
