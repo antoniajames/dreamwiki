@@ -15,10 +15,10 @@
   <body>
      <h1>welcome    to    dreamwiki</h1>
      <form><br>
-     search a dream symbol: <input type="text" name="dream"/><br><br>
+     search a dream symbol: <input type="text" name="dream" onkeyup="formChanged()" onchange="formChanged()"/><br><br>
      <input type="submit" value="*" onclick="formdata()"/><br>
      </form>
- 
-      <canvas data-processing-sources="star_sketch.pde"></canvas>
+     
+     <canvas data-processing-sources="star_sketch.pde"></canvas>
  </body>
  </html> 
