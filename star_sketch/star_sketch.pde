@@ -15,7 +15,7 @@
  */
 
 
-var firstName = document.getElementsByName("firstname")[0].value;
+var firstName = document.getElementsByName("dream")[0].value;
  
  
 //MultilineTextBox textBox;
